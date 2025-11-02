@@ -4,37 +4,118 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
+    <script src="./scripts/script.js" defer></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_type_light">
               День
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
               Авто
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_type_dark">
               Неон
             </button>
           </li>
         </ul>
       </nav>
+      <span class="header__decorative-text" aria-hidden="true">REC</span>
+      <div class="header__decorative-dot"></div>
+
+      <h1 class="header__title">Сложно сосредоточиться</h1>
+
+      <div class="header__content">
+        <p class="header__text title-decor">
+          Фоновые изображения мешают сосредоточиться. Люди не читают текст, а пытаются рассмотреть картинку. 
+          Поэтому я убрал всё лишнее и сделал чёрный фон с белым текстом.
+        </p>
+      </div>
     </header>
+
+    <main class="main">
+      <section class="section reasons">
+        <h2 class="section__title">Почему сложно сосредоточиться?</h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">
+              Особенно сложно сосредоточиться, когда задач много и все они — важные. 
+              Составьте список приоритетов и разбирайтесь с ними по порядку.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Физическое состояние</h3>
+            <p class="card__text">
+              Боль, голод, жажда или плохое самочувствие — всё это мешает сосредоточиться. 
+              Сначала устраните проблемы со здоровьем.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Окружающая обстановка</h3>
+            <p class="card__text">
+              Шум, движение и другие люди могут отвлекать. 
+              Попробуйте уединиться или использовать шумоподавляющие наушники.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section solutions">
+        <h2 class="section__title">Что делать?</h2>
+        <div class="section__content">
+          <article class="card">
+            <h3 class="card__title title-decor">Составьте план</h3>
+            <p class="card__text">
+              План помогает структурировать работу и не упустить важное. 
+              Начните с крупных задач, разбивая их на более мелкие.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Устраните отвлекающие факторы</h3>
+            <p class="card__text">
+              Отключите уведомления, закройте лишние вкладки и создайте комфортное рабочее пространство.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Отдыхайте</h3>
+            <p class="card__text">
+              Регулярные перерывы помогают сохранить концентрацию. 
+              Используйте технику Pomodoro: 25 минут работы, 5 минут отдыха.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery">
+        <h2 class="section__title">Галерея фокуса</h2>
+        <div class="gallery__grid">
+          <img src="./images/sunset.png" alt="Живописный закат над горами" class="gallery__image" loading="lazy">
+          <img src="./images/ice-cream.png" alt="Стакан с мороженым" class="gallery__image" loading="lazy">
+          <img src="./images/tape.png" alt="Аудиокассета на столе" class="gallery__image" loading="lazy">
+          <img src="./images/books.png" alt="Стопка книг на полке" class="gallery__image" loading="lazy">
+          <img src="./images/street.png" alt="Улица города в дневное время" class="gallery__image" loading="lazy">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+      <h2 class="footer__title">Сосредоточьтесь на важном</h2>
+    </footer>
   </body>
 </html>
