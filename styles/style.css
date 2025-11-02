@@ -15,8 +15,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr auto;
   align-items: center;
-  justify-items: end; 
   padding: var(--main-padding);
+  justify-items: end;
 }
 
 .header__description {
