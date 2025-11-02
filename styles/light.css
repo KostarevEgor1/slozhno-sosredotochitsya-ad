@@ -1,21 +1,18 @@
 :root.theme-light {
-  --accent-color: #FF8DCB;
-  --title-color: #FFC2E6;
-  --text-color: #353430;
-  --background-color: #FFF1F7;
-  --decor-color: #353430;
+  --main-text-color: #353430;
+  --bg-color: #fff1f7;
+  --main-header-color: #ffc2e6;
   --button-color: #353430;
-  --button-hover-color: rgba(53, 52, 48, 0.4);
-  --section-title-color: #353430;
-  --card-title-color: #353430;
-  --card-text-color: #353430;
-  --link-shadow: #FF8DCB;
-  --link-hover-color: #353430;
+  --button-hover-border: #32312d66;
+  --section-header-color: #353430;
+  --article-header-color: #353430;
+  --article-bg-color: #ff8dcb;
+  --link-shadow-color: #ff8dcb;
+  --bg-image: url("../images/cover-image-light.png");
+  --visible: hidden;
 }
 
-.theme-light .page {
-  background-image: url('../images/cover-image-light.png');
+.theme-light .header__rec,
+.theme-light .header__rec::after {
+  visibility: hidden;
 }
-
-
-
